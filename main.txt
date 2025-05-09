@@ -1,0 +1,268 @@
+/*OBJECTIVE :- SAMPLE REPORT OF ADDRESS BOOK	*/
+
+
+
+[#Menu: Gateway of tally]
+	
+	Add : Item : "HCL_Address Book" : Display : HCL_Address Book
+	
+	[Report: HCL_Address Book]
+		
+		Form :HCL_Address Book
+		
+		[Form: HCL_Address Book]
+			
+			Height			: 100% page
+			Width			: 100% page
+			Space Top		: 4% page
+			Space Bottom	: 2% page
+			Space Left		: 2% page
+			Space Right		: 2% page
+			
+			Parts : HCL_Address Header, HCL_Address Title ,HCL_Address Body 
+			
+			[Part : HCL_Address Header]
+				
+				Line: HCL_Address Headline
+				
+				[Line: HCL_Address Headline]
+					
+					Field: HCL_Address Headline
+					
+					[Field: HCL_Address Headline]
+						
+						Set as	: "ADDRESS BOOK"
+						Style	: ICalibri Large Bold
+						
+             [Part: HCL_Address Title]
+				 
+				 Line  		: HCL_Address Title
+                 Border		: Thin Box
+				 Background	: Grey
+				
+				 [Line:HCL_Address Title]
+					 
+					 Fields : HCL_Customer, HCL_Address, HCL_GST, HCL_Ph no, HCL_Email
+					 
+					 [Field: HCL_Customer]
+						 
+						 Set as  	: "Customer"
+						 Style  	:  ACalibri Default
+						 Border	 	:  Thin Box
+                         Full Width	:  Yes
+						 Align	 	:  Center
+						 
+                      [Field: HCL_Address]
+						  
+						  Set as : "Address"
+						  Style  :  ACalibri Default 
+						  Border :  Thin Box
+						  Width	 :  30% page
+						  Align	 :  Center
+						
+					  [Field: HCL_GST]
+						  
+						  Set as : "GST"
+						  Style  :  ACalibri Default
+						  Border :  Thin Box
+						  Width	 :  10% page 
+						  Align	 :  Center
+						  
+                      [Field: HCL_Ph no]
+						  
+						  Set as : "Ph no"
+						  Style  :  ACalibri Default
+						  Border :  Thin Box
+						  Width	 :  15% page
+						  Align	 :  Center
+						
+                       [Field: HCL_Email]
+						  
+						  Set as     :  "Email"
+						  Style      :  ACalibri Default
+						  Border     :  Thin Box
+						  Width		 :  20% page
+						  Align		 :  Center
+						  
+			 [Part: HCL_Address Body]
+				 
+				 Lines   : HCL_dell, HCL_Hp, HCL_Samsung
+				 Border	 : Thin Box
+				
+				 [Line: HCL_dell]
+
+					 Field  : Hcl_dellCust, Hcl_dell Add, Hcl_dell gst, Hcl_dell Ph, Hcl_dell email
+					 Border	: Thin Box
+					 
+					 [Field: Hcl_dellCust]
+						 
+						 Set as 	 :  "Dell"
+						 Full Width	 :  Yes
+						 Align		 :  Left
+						 Border	 	 :  Thin Box
+						 Indent		 :  1
+						 
+                      [Field: Hcl_dell Add]
+						 
+						 Set as :  "Dell Address"
+						 Width	:  30% page
+						 Align	:  Left
+						 Border	:  Thin Box
+						 Indent	:  1
+						 
+                       [Field: Hcl_dell gst]
+						 
+						 Set as :  "397654"
+						 Width	:  10% page
+						 Align	:  Left
+						 Border	:  Thin Box
+						 Indent	:  1
+						 
+                       [Field: Hcl_dell Ph]
+						 
+						 Set as  :  "9999999999"
+						 Width	 :  15% page
+						 Align	 :  Left
+						 Border	 :  Thin Box
+						 Indent	 :  1
+						 
+                       [Field: Hcl_dell email]
+						 
+						 Set as  :  "Dell@gmail.com"
+						 Width	 :  20% page
+						 Align	 :  Left
+						 Border	 :  Thin Box
+						 Indent	 :  1
+						 
+				 [Line:  HCL_Hp]
+					 
+					 Field : HCL_HpCust, HCL_Hp Add, HCL_Hp gst, HCL_Hp Ph, HCL_Hp email
+					 Border: Thin Box
+					 
+					 [Field:  HCL_HpCust]
+						 
+						 Set as 	:  "Hp"
+						 Full Width	:  Yes
+						 Align		:  Left
+						 Border		:  Thin Box
+						 Indent		:  1
+						 
+                      [Field:  HCL_Hp Add]
+						 
+						 Set as :  "Hp Address"
+						 Width	:  30% page
+						 Align	:  Left
+						 Border	:  Thin Box
+						 Indent	:  1
+						 
+                       [Field:  HCL_Hp gst]
+						 
+						 Set as :  "908765"
+						 Width	:  10% page
+						 Align	:  Left
+						 Border	:  Thin Box
+						 Indent	:  1
+						 
+                       [Field:  HCL_Hp Ph]
+						 
+						 Set as  :  "8888888888"
+						 Width	 :  15% page
+						 Align	 :  Left
+						 Border	 :  Thin Box
+						 Indent	 :  1
+						 
+                       [Field:  HCL_Hp email]
+						 
+						 Set as  :  "Hp@gmail.com"
+						 Width	 :  20% page
+						 Align	 :  Left
+						 Border	 :  Thin Box
+						 Indent	 :  1
+						 
+                 [Line:  HCL_Samsung]
+					 
+					 Field:   HCL_SamsungCust, HCL_Samsung Add, HCL_Samsung gst, HCL_Samsung Ph, HCL_Samsung email
+					 Border:  Thin Box
+					 
+					 [Field:   HCL_SamsungCust]
+						 
+						 Set as	    :  "Samsung"
+						 Full Width :  Yes
+						 Align		:  Left
+						 Border		:  Thin Box
+						 Indent		:  1
+						 
+                      [Field:   HCL_Samsung Add]
+						 
+						 Set as :  "Samsung Address"
+						 Width	:  30% page
+						 Align	:  Left
+						 Border	:  Thin Box
+						 Indent	:  1
+						 
+                       [Field:   HCL_Samsung gst]
+						 
+						 Set as :  "897634"
+						 Width	:  10% page
+						 Align	:  Left
+						 Border	:  Thin Box
+						 Indent	:  1
+						 
+                       [Field:   HCL_Samsung Ph]
+						 
+						 Set as :  "7777777777"
+						 Width	:  15% page
+						 Align	:  Left
+						 Border	:  Thin Box
+						 Indent	:  1
+						 
+                       [Field:   HCL_Samsung email]
+						 
+						 Set as  :  "Samsung@gmail.com"
+						 Width	 :  20% page
+						 Align	 :  Left 
+						 Border	 :  Thin Box
+						 Indent	 :  1
+
+
+
+
+
+[Style: ICalibri Large Bold]
+	
+	Font    	: "Calibri"
+    Height  	: 12
+	Bold		: Yes
+	Italic		: Yes
+	
+[Style: ACalibri Default]
+	
+	Font    	: "Calibri"
+    Height  	: 14
+	Bold		: Yes
+
+
+
+[#Field:EXPINV VATGCC Rate]
+	Print BG:Red
+
+	[#Field:EXPINV VATGCC TaxableAmt]
+		Print BG:Yellow
+		
+		[#Field:EXPINV VATGCC Amt]
+			Print BG:Green
+			
+			[#Field:EXPINV VATGCC TotalAmt]
+				Print BG:Orange
+
+
+
+
+
+
+
+
+
+
+
+
